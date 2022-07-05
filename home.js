@@ -24,8 +24,10 @@
 //CODE HERE
 
 
-// const greetUser = username =>
-
+const greetUser = username => {
+    console.log(`Hello there ${username}`)
+}
+console.log(greetUser(`Devin`))
 
 //////////////////PROBLEM 2////////////////////
 /* 

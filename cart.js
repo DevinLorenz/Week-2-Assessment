@@ -35,8 +35,9 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce((accumulator,current) => accumulator + current.price , 0)
 
+console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -54,8 +55,11 @@ const cart = [
 */
 
 //CODE HERE
+const calcFinalPrice = (cartTotal,couponValue,tax) => {
+    return ((cartTotal * tax) + cartTotal) - couponValue
+}
 
-
+console.log(calcFinalPrice(12,2,.10))
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -88,3 +92,11 @@ const cart = [
 */
 
 //CODE HERE
+let user = {
+    firstName: `Devin`,
+    phone: 3137200515,
+    address: `Cool Town`,
+    isADad: true,
+    cardNumber:5165132163846516
+}
+
